@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin Sketch">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Sketch"> -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            font-family: "Montserrat";
+
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        .lable {
+            float: right;
+        }
+
+        .input {
+            height: 30px;
+            width: 100%;
+            background-color: #F0F0F0;
+            margin-top: 10px;
+            border-color: #06283D;
+            border: 2px solid #06283D;
+            border-radius: 5px
+        }
+
+        .input1 {
+            height: 30px;
+            width: 100%;
+            background-color: #F0F0F0;
+            margin-top: 10px;
+            border-color: white;
+            border: 2px solid #06283D;
+            border-radius: 5px
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid transparent;
+            border-collapse: collapse;
+        }
+
+        .paddleft {
+            border: 2px solid transparent;
+            width: 10%;
+            height: 50px;
+            float: left
+        }
+
+        .tab {
+            border: 1px solid transparent;
+            float: left;
+            width: 35%;
+            height: 450px
+        }
+
+        .tab2 {
+            border: 1px solid transparent;
+            float: left;
+            width: 45%;
+            height: 350px
+        }
+
+        .shadow {
+            margin-top: 10px;
+            border: 2px solid red;
+            float: left;
+            width: 80%;
+            height: 955px;
+            margin-bottom: 50px;
+            border: 0px solid;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 5px 10px 8px 10px #888888;
+        }
+
+        .div2 {
+            width: 139%;
+            text-align: right;
+        }
+        
+
+        .input, textarea, select, option {
+            margin-left: 10px;
+        }
+
+
+        @media screen and (max-width: 1100px) {
+            .div2 {
+                width: 70%;
+                text-align: right
+            }
+
+            .tab {
+                border: 1px solid transparent;
+                float: left;
+                width: 45%;
+                height: 550px
+            }
+
+            .tab2 {
+                border: 1px solid transparent;
+                float: left;
+                width: 45%;
+                height: 550px
+            }
+
+            .paddleft {
+                border: 1px solid transparent;
+                width: 5%;
+                height: 50px;
+                float: left
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .table,
+            th,
+            td {
+                font-size: 15px
+            }
+
+            .input1 {
+                height: 30px;
+                width: 100%;
+                background-color: #F0F0F0;
+                margin-top: 10px;
+                border-color: white;
+                border: 2px solid grey;
+                border-radius: 5px;
+                float: left
+            }
+
+            .tab {
+                border: 1px solid transparent;
+                float: left;
+                width: 90%;
+                height: 550;
+            }
+
+            .tab2 {
+                border: 1px solid transparent;
+                float: left;
+                width: 90%;
+                height: 550;
+            }
+
+            .paddleft {
+                border: 1px solid transparent;
+                width: 5%;
+                height: 800px;
+                float: left
+            }
+
+            .shadow {
+                border: 2px solid red;
+                float: left;
+                width: 80%;
+
+                height: 1240px;
+                border: 0px solid;
+                background-color: white;
+                padding: 10px;
+                box-shadow: 5px 10px 8px 10px #888888;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+
+            .table,
+            th,
+            td {
+                font-size: 12px;
+            }
+
+
+            td {
+                text-align: right;
+                padding: 5px
+            }
+        }
+
+        #example2 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px #888888;
+        }
+
+        @media screen and (max-width: 600px) {
+            .input1 {
+                height: 30px;
+                width: 90%;
+                background-color: #F0F0F0;
+                margin-top: 10px;
+                border-color: white;
+                border: 2px solid grey;
+                border-radius: 5px;
+                float: left
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .input1 {
+                height: 30px;
+                width: 40%;
+                background-color: #F0F0F0;
+                margin-top: 10px;
+                border-color: white;
+                border: 2px solid grey;
+                border-radius: 5px;
+                float: left
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="border:0px solid red;
+	width:100%;
+	height:50px;
+	text-align:center;
+	font-family:Londrina Sketch;  	
+	font-size:20px">
+        <h1 style="color:#06283D" style="margin-bottom: 10px">Form for Innovation</h1>
+        
+    </div>
+    <div class="paddleft"></div>
+    <div class="shadow">
+        <div class="tab" style="margin-top:40px">
+
+            <table style="width:100%">
+
+                <form>
+                    <tr>
+                        <td><label class="lable">Team Name :<span style="color: red;">*</span> </label></td>
+                        <td> <input type="text" id="startupname" name="startupname" placeholder="Team Name" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Choose Your Category:<span style="color: red;">*</span></label></td>
+                        <td>
+                            <select id="cars" name="cars"
+                                style="height:35px;width:100%;background-color:#F0F0F0;margin-top:10px;border-color:black;border:2px solid #06283D;border-radius:5px"
+                                required>
+                                <option value="choose" required>--choose--</option>
+                                <option value="a">class 5-8</option>
+                                <option value="b">class 9-12</option>
+                                <option value="c">undergratuate</option>
+                                <option value="d">any professionals</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Title of Innovation :<span style="color: red;">*</span> </label></td>
+                        <td> <input type="text" id="startupname" name="startupname"
+                                placeholder="Enter Name of Innovation" class="input" required></td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+
+
+                    <tr>
+                        <td><label class="lable">Field of Innovation<span style="color: red;">*</span></label></td>
+                        <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" style="margin-left:10px">
+                            <label for="vehicle1">Agriculture</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" style="margin-left:10px">
+                            <label for="vehicle2">Healthcare</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" style="margin-left:10px">
+                            <label for="vehicle4">Education</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" style="margin-left:10px">
+                            <label for="vehicle5">Safety and Security</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" style="margin-left:10px">
+                            <label for="vehicle7">Transportation</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" style="margin-left:10px">
+                            <label for="vehicle8">Defence</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" style="margin-left:10px">
+                            <label for="vehicle10">Information and communcationTechnology</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" style="margin-left:10px">
+                            <label for="vehicle10">Manufacturing</label><br>
+                            <label for="vehicle8">Construction</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" style="margin-left:10px">
+                            <label for="vehicle10">IOT and Eelectronics</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" style="margin-left:10px">
+                            <label for="vehicle10">AIML</label><br>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Name of Team Leader :<span style="color: red;">*</span></label></td>
+                        <td> <input type="number" id="alternatecontact" name="alternatecontact"
+                                placeholder="Name of Team Leader" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Contact No. (Team Leader) :<span style="color: red;">*</span></label>
+                        </td>
+                        <td> <input type="number" id="alternatecontact" name="alternatecontact"
+                                placeholder="Contact No. (Team Leader)" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Alternate Contact Number (of any member) :<span
+                                    style="color: red;">*</span></label></td>
+                        <td> <input type="number" id="alternatecontact" name="alternatecontact"
+                                placeholder="Alternate Contact Number (of any member)" class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Email Id (Team Leader) :<span style="color: red;">*</span> </label>
+                        </td>
+                        <td> <input type="email" id="email" name="eamil" placeholder="Email Id (Team Leader)"
+                                class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Alternate Email Id (of any member) :<span style="color: red;">*</span>
+                            </label></td>
+                        <td> <input type="email" id="email" name="eamil" placeholder="Alternate Email Id (of any member)"
+                                class="input" required></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Name of Team Member - 1: </label></td>
+                        <td> <input type="text" id="membername1" name="membername1"
+                                placeholder="Name of Team Member - 1: " class="input"> </td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Name of Team Member - 2: </label></td>
+                        <td> <input type="text" id="membername2" name="membername2"
+                                placeholder="Name of Team Member - 2: " class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Name of Team Member - 3: </label></td>
+                        <td> <input type="text" id="membername3" name="membername3"
+                                placeholder="Name of Team Member - 3: " class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Name of Mentor :</label></td>
+                        <td> <input type="text" id="membername3" name="membername3"
+                                placeholder="Name of Mentor " class="input"></td>
+                    </tr>
+                    
+                </form>
+
+
+            </table>
+        </div>
+        <div class="tab2" style="margin-top:40px ">
+
+            <table class="div2">
+                <form>
+                    
+                    <tr>
+                        <td><label class="lable">Contact No. of Mentor :</label></td>
+                        <td> <input type="text" id="membername3" name="membername3"
+                                placeholder="Contact No. of Mentor" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Email ID of Mentor :</label></td>
+                        <td> <input type="text" id="membername3" name="membername3"
+                                placeholder="Email ID of Mentor" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Describe your Innovation (Minimum 500 words):<span style="color: red;">*</span> </label></td>
+				<td>
+					 <!-- <input type="text" id="Describe" name="Describe" placeholder="Describe your startup" class="input1" required> -->
+					 <br><textarea
+					 class="form-control"
+					 name="message"
+					 id="message"
+					 cols="30"
+					 rows="7"
+					 required
+					 placeholder="Describe here"
+					 required
+				   ></textarea>
+					</td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Upload a video of Innovation on Youtube and share the link below (Max 5
+                                min)</label></td>
+                        <td> <input type="text" id="membername3" name="membername3"
+                                placeholder="Enter YouTube video link" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Have you filed patent?
+                            </label></td>
+                        <td> <input type="radio" id="html" name="fav_language" value="HTML" required>
+                            <label for="html">Yes</label><br>
+                        </td>
+                        <td> <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">No</label><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label class="lable">If yes, Provide Patent Application Number (Added Advantage during Evaluation)</label></td>
+                        <td> <input type="text" id="membername3" name="membername3"
+                                placeholder="Patent Application Number" class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Have you received grant of patent?
+                        </label></td>
+                        <td> <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Yes</label><br>
+                        </td>
+                        <td> <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">No</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">If yes, upload Patent Certificate
+                        </label></td>
+                        <td> <input type="file" id="membername3" name="membername3"
+                                placeholder="Name of Team Member - 3: " class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">Have you received any award at National/International Level?
+                        </label></td>
+                        <td> <input type="file" id="membername3" name="membername3"
+                                placeholder="Name of Team Member - 3: " class="input"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="lable">If yes, provide details of Award/Awards (Added Advantage during evaluation)
+                        </label></td>
+                        <td> <input type="file" id="membername3" name="membername3"
+                                placeholder="Name of Team Member - 3: " class="input"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label class="lable">I agree with all the the 
+                            terms & conditions and I have read Guidelines, 
+                            Privacy Policy, Information Policy and 
+                            No Refund Policy mentioned on our website innovationsrus.in
+                        <!-- <img src="image.png" alt=""> -->
+                        </label></td>
+                        <td><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Yes</label><br>
+                        </td>
+                    </tr>
+                   <tr>
+				    <td style="text-align:left;padding-top:30px">
+				        <input type="submit"  style="float:right;height:40px;width:120px;background-color:#06283D;color:white;border-radius:5px">		
+				        </td>
+			        </tr> 
+                </form>
+                    <!-- <br><br><br><br><br> -->
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

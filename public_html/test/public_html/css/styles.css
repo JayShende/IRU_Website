@@ -1,0 +1,706 @@
+#title {
+  /*background-color: #ff4c68;*/
+  background-color: #06283D;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  right: 0;
+}
+h1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.container-fluid {
+  padding: 3% 15% 7%;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* ===========================Navigation bar ================================*/
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.0rem;
+  font-weight: 500;
+  
+}
+.navbar {
+  padding: 0 0 3.0rem 0;
+}
+.nav-item {
+  padding: 0 10px;
+}
+.nav-link {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+/* ===========================download buttons ================================*/
+
+.but {
+  font-family: "Montserrat";
+  font-weight: 520;
+}
+.download-button {
+  margin: 3% 3% 5% 0;
+}
+/*============================ title-image =============================*/
+.title-image {
+  width: 70%;
+  transform: rotate(-5deg);
+  right: 10%;
+  bottom: 3.5%;
+  position: absolute;
+}
+.msme-logo{
+width: 30%; 
+padding-top: 0;
+ margin-top: 0; 
+ padding-bottom: 5%;
+}
+.date{
+  font-size:2rem; 
+  padding: 0,0,0,0;
+}
+.categories-text
+ { font-weight: 600; 
+  font-size: 2.0rem;
+}
+
+
+
+
+/* ===========================FEATURES ================================*/
+.flow-box{
+  margin: 0;
+}
+
+.tick {
+  font-size: 60px;
+  margin-bottom: 1rem;
+  color: #06283D;
+}
+
+.feature-box {
+  padding: 1% 3% 1% 3%;
+  text-align: center;
+  
+}
+.feature-box-mem{
+  padding: 1% 2% 1% 2%;
+  text-align: center;
+
+}
+.feature-member-name{
+  font-size: 1rem;
+
+}
+.sub-content {
+  color: #8f8f8f;
+  font-size: 20px;
+  text-align: center;
+}
+.tick:hover {
+  color: #1c5d86;
+}
+#features {
+  padding: 5% 4% 5% 4%;
+  background-color: #fff;
+  /* position: relative; */
+
+}
+ .categories{
+  margin-left: 15%;
+  padding-left: 15%;
+  padding-bottom: 0%;
+ }
+ /*===========================Testimonial Section ================================*/
+
+#testimonials {
+  text-align: center;
+  background-color: #06283D;
+  color: #fff;
+}
+.testimonial-image {
+  width: 13%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item {
+  padding: 5% 15% 5% 15%;
+}
+#press {
+  background-color: #06283D;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-logos {
+  width: 10%;
+  margin: 20px 20px 50px;
+}
+
+
+/*============================PRIZES=================================*/
+.prizes-div{
+  background-color: #06283D;
+  text-align: left;
+  padding: 3% 5% 5% 5%;
+}
+#prizes{
+  margin-top: 0;
+  padding-top: 0;
+}
+.prizes-text{
+  color: #fff;
+  font-weight: 600;
+}
+.prizes-note-text{
+  color: #fff;
+  font-size: 120%;
+}
+/* ===========================Pricing Section ================================*/
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/*=========================organisers=============================*/
+.org-img{
+  width:30%;
+  padding-bottom: 2%;
+}
+.organiser-section-head{
+  text-align: center; padding-top: 3%;
+}
+.org-img-std{
+  width:30%;
+  padding-bottom: 2%;
+}
+/* ===========================Call to Action================================*/
+
+.cta-div {
+  background-color: #06283D;
+  text-align: center;
+  padding: 4% 12% 4% 7%;
+  size: 400px;
+}
+.find {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.mg {
+  height: 5rem;
+  background-color: #fff;
+}
+
+.sponsor-heading{
+  color: #fff; 
+  padding-bottom: 2%;
+  
+}
+.rane{
+  float: left; 
+  width: 25%; 
+  bottom: 2%;
+}
+.sponsor-name{
+  color: white; 
+  font-size: 2rem; 
+  text-align:left; 
+}
+.sponsor-deets{
+  color: white; 
+  text-align: justify;
+  font-size: 1rem;
+}
+.bodies-heading{
+  padding-top: 3% ; font-weight: 800;
+}
+.bodies-name{
+  padding-bottom:1%;
+}
+.bodies-content{
+   text-align: justify;
+}
+/* ===========================footer================================*/
+.contactus-heading{
+  text-align: center;
+}
+#footer {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+.icon {
+  font-size: 3.0rem;
+  margin: 0 1rem 2rem;
+  transition: ease;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  text-decoration: none;
+  color: #06283D;
+}
+
+.gauri{
+  transform: rotate(10deg);
+}
+.rinesh{
+  width: 10%;
+}
+.icon:hover {
+  font-size: 4.5rem;
+  color: #1c5d86; 
+}
+.icon.ig:hover {
+  font-size: 4.5rem;
+  color: #DD2A7B; 
+}
+.icon.twitter:hover {
+  font-size: 4.5rem;
+  color: #00ACEE; 
+}
+.icon.linkedin:hover {
+  font-size: 4.5rem;
+  color: #0A66C2; 
+}
+
+.Copyright {
+  margin-top: 25px;
+  position: sticky;
+}
+.social-media {
+  height: 4.5rem;
+}
+html
+{
+  scroll-behavior: smooth;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.acm-logo{
+  width: 275px;
+  height: 275px;
+}
+
+.tnc-text{
+  padding: 5% 10% 10% 0%; 
+  font-size: 1.2rem;
+  text-align: left;
+
+         
+}
+.tnc-gd{
+  text-align: center;
+  text-decoration: none; 
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1% 0% 0 4%;
+}
+
+/* ================================FORM======================== */
+form {
+  width: 90%;
+  height: 72%;
+  /* margin: 60px auto; */
+  margin-left: 10%;
+  margin-bottom: 20%;
+  background: #efefef;
+  padding: 10px 40px 40px 10px;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+}
+label {
+  display: block;
+  position: relative;
+  margin: 40px 0px;
+}
+.label-txt {
+  position: absolute;
+  top: -1.6em;
+  padding: 10px;
+  font-family: "Montserrat";
+  font-size: .8em;
+  letter-spacing: 1px;
+  color: rgb(120,120,120);
+  transition: ease .3s;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.line-box {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #BCBCBC;
+}
+
+.line {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8BC34A;
+  transition: ease .6s;
+}
+
+.input:focus + .line-box .line {
+  width: 100%;
+}
+
+.label-active {
+  top: -3em;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgb(220,220,220);
+  font-weight: bold;
+  color: rgb(120,120,120);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: ease .3s;
+}
+
+button:hover {
+  background: #8BC34A;
+  color: #ffffff;
+}
+#msg{
+	color:red;
+}
+
+/* df-messenger {
+       --df-messenger-bot-message: #06283D;
+       --df-messenger-button-titlebar-color: #1c5d86;
+       --df-messenger-chat-background-color: #fafafa;
+       --df-messenger-font-color: white;
+       --df-messenger-send-icon: #06283D;
+       --df-messenger-user-message: #479b3d;
+       
+      } */
+
+      @media (max-width: 1024px) {
+        .title-image {
+          position: static;
+          transform: rotate(0);
+          width: 0;
+        }
+        #title {
+          text-align: center;
+        }
+        .navbar-brand {
+          font-family: "Ubuntu";
+          font-size: 3.5rem;
+          font-weight: 500;
+          
+        }
+        .navbar {
+          padding: 2.0rem 0 3.0rem 0;
+        }
+        h1 {
+          font-family: "Montserrat";
+          font-weight: 900;
+          font-size: 6.0rem;
+          line-height: 1.6;
+        }
+        .navbar-toggler-icon
+        {
+           width: 70px;
+           height: 70px;
+        }
+        h3{
+          font-size: 2.5rem;
+        }
+        .container-fluid {
+          padding: 3% 5% 7%;
+        }
+        .msme-logo{
+          width: 50%;
+        }
+        .nav-link {
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 3rem;
+        }
+        .date{
+          font-size: 4rem;
+        }
+        .but {
+          font-family: "Montserrat";
+          font-weight: 520;
+          font-size: 4rem;
+          padding-top: 5rem;
+        }
+        .categories-text{ 
+         font-weight: 600; 
+         font-size: 3rem;
+        }
+        .categories{
+          margin-left: 5%;
+          padding-left: 15%;
+          padding-bottom: 0%;
+         }
+         .prizes-text{
+          color: #fff;
+          font-weight: 600;
+          font-size: 3rem;
+         }
+         .prizes-note-text{
+          color: #fff;
+          font-size: 220%;
+         }
+         .tick {
+          font-size: 200px;
+          margin-bottom: 1.7rem;
+          color: #06283D;
+        }
+        .sub-content {
+          color: #8f8f8f;
+          font-size: 2.7rem;
+          text-align: justify;
+        }
+        .feature-box {
+          padding: 1% 20% 8% 20%;
+          text-align: center;
+          margin-top: 20px;
+          
+        }
+        .day{
+          text-align: center;
+        }
+        .sponsor-heading{
+          color: #fff; 
+          padding-bottom: 2%;
+          font-size: 6rem;
+        }
+        .rane{
+          
+          width: 65%; 
+          bottom: 2%;
+          margin-left: 17%;
+        
+        }
+        .sponsor-name{
+          color: white; 
+          font-size: 3.5rem; 
+          text-align:justify; 
+          padding-bottom: 4%;
+        }
+        .sponsor-deets{
+          color: white; 
+          text-align: justify;
+          font-size: 2.0rem;
+        }
+        .cta-div {
+          background-color: #06283D;
+          text-align: center;
+          padding: 4% 10% 4% 10%;
+        }
+        .organiser-section-head{
+          text-align: center;
+           padding-top: 3%;
+           font-size: 5rem;
+        }
+        .org-img-std{
+          width:50%;
+          padding-bottom: 2%;
+        }
+        .bodies-heading{
+          padding-top: 3% ; font-weight: 800;
+          font-size: 4.5rem;
+        }
+        .bodies-name{
+          padding-bottom:1%;
+          font-size: 4rem;
+        }
+        .bodies-content{
+          text-align: justify;
+          font-size: 1.6rem;
+       }
+       .press-logos {
+        width: 30%;
+        margin: 20px 20px 50px;
+      }
+      .contactus-heading{
+        text-align: center;
+        font-size: 4rem;
+      }
+      .icon{
+        font-size: 5rem;
+
+      }
+      .Copyright {
+        margin-top: 10px;
+        position: sticky;
+        text-align: center;
+      }
+      .acm-logo{
+        width: 350px;
+        height: 350px;
+      }
+      df-messenger{
+        display:none;
+      }
+      .tnc-text{
+        font-size: 2.0rem;
+      }
+      .tnc-gd{
+        text-align: center;
+        text-decoration: none; 
+        font-size: 2.7rem;
+        text-decoration: none;
+        padding: 4% 0% 0 4%;
+      }
+      form {
+        width: 80%;
+        height: 70%;
+        margin-right: 10%;
+        text-align: center;
+      }
+      .label-txt {
+        position: absolute;
+        text-align: center;
+        top: -1.6em;
+        padding: 40px;
+        font-family: "Montserrat";
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        color: rgb(120,120,120);
+        transition: ease .3s;
+      }
+      .input {
+        width: 90%;
+        padding: 10px;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+      
+      .line-box {
+        position: relative;
+        width: 80%;
+        top: 30px;
+        height: 2px;
+        background: #BCBCBC;
+      }
+      
+      .line {
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        top: 0;
+        left: 50%;
+        margin-bottom: 10px;
+        transform: translateX(-50%);
+        background: #8BC34A;
+        transition: ease .6s;
+      }
+      
+      .input:focus + .line-box .line {
+        width: 100%;
+      }
+      
+      .label-active {
+        top: -2em;
+      }
+      
+      /* button {
+        display: inline-block;
+        width: 50%;
+        height: 15%;
+        font-size: 2.2rem;
+        padding: 12px 24px;
+        background: rgb(220,220,220);
+        font-weight: bold;
+        color: rgb(120,120,120);
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: ease .3s;
+      } */
+      .button-form {
+        display: inline-block;
+        width: 50%;
+        height: 15%;
+        font-size: 2.2rem;
+        padding: 12px 24px;
+        background: rgb(220,220,220);
+        font-weight: bold;
+        color: rgb(120,120,120);
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: ease .3s;
+      }
+      .form-control{
+        font-size: 1.5rem;
+      }
+      
+
+      }
+
+      #content {
+        position: fixed;
+    }
+    #content img {
+        position: fixed;
+       bottom: 0px;
+        right: 0px;
+        width: 15%;
+        z-index: 100;
+    }
+ 
+      @media (min-width: 1024px) {
+        df-messenger {
+          --df-messenger-bot-message: #06283D;
+          --df-messenger-button-titlebar-color: #1c5d86;
+          --df-messenger-chat-background-color: #fafafa;
+          --df-messenger-font-color: white;
+          --df-messenger-send-icon: #06283D;
+          --df-messenger-user-message: #479b3d;
+          
+         }
+         #content{
+          display: none;
+         }
+        
+      }

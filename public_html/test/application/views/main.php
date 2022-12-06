@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow" />
+
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- <meta name="viewport" content="width-device-width, initial-scale=1"> -->
+  <title>IRU</title>
+ <link rel="icon" href="favicon(1).ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;900&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="<?=base_url;?>public_html/css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
+  integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
+  crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<script language="javascript" type="text/javascript">
+	function pay_status()
+{ alert('pay_status');
+var hr = new XMLHttpRequest();
+var url = "<?=base_url;?>index.php/Welcome/pay_status";
+ var vars = "";
+ alert(url);
+hr.open("POST", url, true);
+hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+hr.onreadystatechange = function()
+{
+   if(hr.readyState == 4 && hr.status == 200) {
+       var return_data = hr.responseText;
+  document.getElementById('tabledata').innerHTML=return_data;
+   }
+    }
+  hr.send(vars);
+  document.getElementById('tabledata').innerHTML="Please Wait";
+}
+
+	</script>	  
+		  
+<body>
+ <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script> -->
+ 
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Emitra-IRU-TBI-YCCE"
+    agent-id="79d43c00-4596-4862-a880-420c1c56a14b"
+    language-code="en"
+    chat-icon="https://cdn-icons-png.flaticon.com/512/1533/1533105.png" 
+  ></df-messenger>  
+
+<!-- ======================= CHAT BOT=============================== -->
+ <a href="index3.html"> <div id="content">
+    <img src="<?=base_url;?>public_html/images/bot.png" class="ribbon" alt="" />
+    <!-- <div>some text...</div> -->
+</div></a>
+
+  <section id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid">
+      
+        <nav class="navbar navbar-expand-lg navbar-dark" style="padding-bottom:0 ;">
+          <a class="navbar-brand" href=""><img src="<?=base_url;?>public_html/images/IRU logo.png" width="110px" height="110px" >Innovations 'R' Us</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="ml-auto navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="<?=base_url;?>index.php/Welcome/forms">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prizes">Prizes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">About Us</a>
+              </li>
+				<li class="nav-item">
+                <a class="nav-link" href="<?=base_url;?>index.php/Welcome/pay_status">Payment status</a>
+              </li>
+				<li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <div style="text-align: center;">
+       <h3 style="text-align: center; padding-top: 0; font-weight: 300;"> Supported By:</h3>
+       <a href="https://msme.gov.in/"><img src="<?=base_url;?>public_html/images/msme-logo-white.png" alt="" class="msme-logo" ></a>
+      </div>
+        <!-- Title -->
+
+        <div class="row" style="margin: 0;">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+			
+            <h1>One of the Biggest innovation and startup summits of India</h1> <br>
+              <h1  class="date">
+                <i class="fas fa-calendar"></i>
+                <span>20-21 Jan 2023</span></h1> <a href="<?=base_url;?>index.php/Welcome/forms">
+            <button type="button" class="btn btn-outline-light btn-lg download-button">
+                 <span class="but">Register Here!</span></button> 
+              </a>
+          </div>
+
+          <div class="col-6">
+            <img class="title-image" src="<?=base_url;?>public_html/images/idea-2.png" alt="iphone-mockup">
+          </div>
+
+        </div>
+      </div>
+    </div>  
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <h1 style="text-align: center; padding-bottom: 2%;">Categories Of Participation</h1>
+    <div class="categories">
+    <p  class="categories-text">●	5th to 8th <br> <br>
+      ●	9th to 12th <br> <br>
+      ●	Undergraduates <br> <br>
+      ●	Post Graduates and Professionals 
+    </p>
+    </div>
+  </section>
+      <!-- =================PRiZEs Section==================== -->
+
+  <section id="prizes">
+      <div id="tabledata">
+     <div class="prizes-div">
+        <h1 style="color: #fff; text-align: center;">Exciting Cash Prizes <i class="fas fa-sack-dollar"></i></h1> <br> <br>
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="prizes-text">
+            1st Prize: ₹1,00,000 <br>
+            2nd Prize: ₹75,000 <br>
+            3rd Prize: ₹50,000 <br>
+            Consolation Prizes: ₹15,000 
+          </h2>
+          </div>
+          <div class="col-lg-6">
+            <img src="<?=base_url;?>public_html/images/cheque.png" alt="" style="width: 80%; padding-left:10%;">
+          </h2>
+          </div>
+        </div>
+         <br>
+      <h6 class="prizes-note-text">Note: 1st, 2nd, 3rd Prizes and 5 consolation prizes from each category.</h6>
+      </div>
+  </section>
+	</div>
+  <div class="flow-box">
+    <h1 style="text-align: center; padding-bottom: 2.5%; padding-top: 8%;">Flow Of The Event</h1>
+    
+    <div class="row " style="padding-bottom: 7%;">
+      
+      <div class="col-lg-3 feature-box">
+       <i class="fas fa-podium tick"></i> <h3 class="feature-name">Keynote <br> Speech</h3>
+       <p class="sub-content"><span class="day">Day 1:</span><br>The keynote speaker will be a world renowned expert in the
+           field of entrepreneurship and innovation addressing a crowd of 1500+ people</p>
+      </div>
+      <div class="col-lg-3 elite feature-box">
+        <i class="fas fa-lightbulb-on tick"></i>
+        <h3 class="feature-name">Innovation and Startup Exhibition</h3>
+        <p class="sub-content">Day 1:<br>This will be a place where participants from all around India will gather
+           together to share their ideas and innovations with the entire world.</p>
+      </div>
+      <div class="col-lg-3 feature-box">
+        <i class="fas fa-handshake-alt tick"></i>
+        <h3 class="feature-name">The Infinite <br> Pitch</h3>
+        <p class="sub-content">Day 2:<br>The top 30 startups selected from the exhibition will get to present their awe-inspiring ideas in front of renowned investors from all across India.</p>
+      </div>
+      <div class="col-lg-3 feature-box">
+        <i class="fas fa-medal tick"></i>
+        <h3 class="feature-name">Valedictory <br> Ceremony</h3>
+        <p class="sub-content">Day 2:<br>Exciting Cash Prizes in each category: <br>
+          ●	1st Prize: 1,00,000 <br>
+          ●	2nd Prize: 75,000 <br>
+          ●	3rd Prize: 50,000 <br>
+          ●	Consolation Prizes: 15,000 each
+          </p>
+      </div>
+
+    </div>
+    </div>
+    <section id="cta">
+      <div class="cta-div">
+        <h2 class="sponsor-heading">Our Sponsors</h2>
+          <br>
+        <img src="<?=base_url;?>public_html/images/MSME_Logo.svg.png" alt="" class="rane">
+        <br><br>
+        <h3 class="sponsor-name">Ministry of Micro, Small and Medium Enterprises</h3>
+        <p class="sponsor-deets">      
+                  Micro, Small and Medium Enterprises (MSME) sector has emerged as a highly vibrant and dynamic sector of the 
+                  Indian economy over the last five decades. MSMEs not only play crucial role in providing large employment 
+                  opportunities at comparatively lower capital cost than large industries but also help in industrialization
+                  of rural & backward areas, thereby, reducing regional imbalances, assuring more equitable distribution of 
+                  national income and wealth. MSMEs are complementary to 
+                  large industries as ancillary units and this sector contributes 
+                  enormously to the socio-economic development of the country.
+        </p>     
+             
+  
+          
+        
+      </div>
+    </section>
+
+
+
+  
+
+<!-- Organisers of IRU -->
+<div class="organisers">
+
+<h2 class="organiser-section-head">Organisers of IRU:</h2>
+<div class="row" style="padding: 0 10% 0 10%;">
+      
+  <div class="col-lg-6 feature-box">
+    <img src="<?=base_url;?>public_html/images/hod-cricle.png" alt="" class="org-img-std">
+    <h3 class="feature-name" style="margin-bottom: 0;">Dr. Lalit B. Damahe</h3>
+    <p class="sub-content feature-box">Organising Secretary,<br>IRU</p>
+  </div>
+  <div class="col-lg-6 elite feature-box">
+    <img src="<?=base_url;?>public_html/images/khedkar-circle.png" alt="" class="org-img-std">
+    <h3 class="feature-name" style="margin-bottom: 0;">Dr. Sandip S. Khedkar</h3>
+    <p class="sub-content feature-box">Organising Secretary,<br>IRU</p>
+  </div>
+</div>
+ 
+</div>
+
+
+ <!-- Testimonials -->
+
+ <section id="testimonials">
+  <h1 class="bodies-heading">Organising Bodies</h1>
+  <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h3 class="bodies-name">About YCCE</h3>
+        <h6 class="bodies-content">Yeshwantrao Chavan College of Engineering is an autonomous engineering college 
+          affiliated to RTMNU (formerly, Nagpur University). It is located in the town of Hingna in 
+          the district of Nagpur. The college was established in 1984 and is named after Yashwantrao Chavan, 
+          former first Chief Minister of Maharashtra State and the former Deputy Prime Minister of India; since 
+          then, it has been under the administration of Nagar Yuwak Shikshan Sanstha, a subsidiary of Meghe Group. 
+          It attained its autonomous status from the University Grants Commission (India) in 2010. 
+          Since the last 38 years, the institution has magnificently cherished and encouraged the forthcoming engineering 
+          professionals across the country making it one of the most opted engineering colleges in Maharashtra.
+          The college is guided by the Academic Advisory Board consisting of eminent academicians from the 
+          prestigious technical institutes in India. YCCE is one of the top engineering colleges in Nagpur that 
+          aspires to create devoted, proficient, capable, and resourceful engineers who would utilize their
+           assimilated knowledge and skills for the advancement of the organization as well as the Nation.
+           It is the first private engineering college in Central India to acquire "Autonomous Status". 
+          </h6>
+        
+      </div>
+      <div class="carousel-item">
+        <h3 class="bodies-name">About YCCE TBI Foundation</h3>
+        <h6 class="bodies-content">We have recently established YCCE TBI Foundation, a section 8 company, for the provision of technology business incubation under a scheme of promotion of innovation, rural industries, and entrepreneurship of the Ministry of MSME, Govt. of India. At present 10 start-ups are registered and incubated at YCCE TBI Foundation. It is our initiation towards the development of the innovation and incubation ecosystem at YCCE, Nagpur.
+          The YCCE TBI Foundation is established for following objectives: <br>
+          <span style="text-align: left;">
+          ●	Creation of technology based new enterprises <br>
+          ●	Creating value added jobs & services <br>
+          ●	Facilitating transfer of technology <br>
+          ●	Fostering the entrepreneurial spirit <br>
+          ●	Speedy commercialization of R&D output <br>
+          ●	Specialized services to existing SMEs 
+         </span>
+          </h6>
+
+      </div>
+      <div class="carousel-item">
+        <h3 style="padding-bottom: 0.45%;" class="bodies-name">About <br> Department of Computer Science & Engineering</h3>
+        <h6 class="bodies-content">The Department of Computer Science & Engineering, Yeshwantrao Chavan College of Engineering was established in 2020-21
+          The Department offers UG Programme- B.Tech. in Computer Science & Engineering. 
+          The curricula of programmes have been designed to cater to the ever changing needs and demands of software 
+          industry as well as Research organizations with a proper blend of professional core and industry demand electives.
+          The Department works in the core domain of computer science under which various activities related to research and 
+          development of students and faculties are carried out. 
+          The Department has excellent infrastructure and computing facilities supported by high speed Internet and wireless networks. 
+          Vision of the Department:
+          To become the center of academic excellence in Computer Science &Engineering. 
+
+          Mission of the Department
+          To prepare the students to becomecompetent professionals inComputer Science &Engineeringand to be the responsible citizens byimparting state of the art education in CSE and also by imbibing softskills and social ethics in them.
+          </h6>
+
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+</section>
+
+
+<!-- Press -->
+
+<section id="press">
+  <img class="press-logos" src="<?=base_url;?>public_html/images/1.png" alt="tc-logo">
+  <img class="press-logos" src="<?=base_url;?>public_html/images/2.png" alt="tc-logo">
+  <img class="press-logos" src="<?=base_url;?>public_html/images/tbi without bg.png" alt="tnw-logo">
+  <img class="press-logos" src="<?=base_url;?>public_html/images/cosmos.png" alt="biz-insider-logo">
+
+</section>
+
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <h1 class="contactus-heading">Contact us</h1>
+    <br> 
+    <div class="social-media"> 
+      <a href="https://twitter.com/iru_official?t=8-8bSuf0Xa4r66UvaA6OeA&s=09"><i class="fab fa-twitter icon twitter"></i></a>
+      <a href="https://www.linkedin.com/company/innovations-r-us/"><i class="fab fa-linkedin icon linkedin"></i></a>
+      <a href="https://www.instagram.com/innovationsrus/"><i class="fab fa-instagram icon ig"></i></a>
+      <a href="mailto:organiser@innovationsrus.in"><i class="fas fa-envelope icon mail"></i></a>  
+      </div> <br> <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 style="font-size: 2.0rem;">Feel free to ask anything</h3>
+
+
+        <!-- ===================================forM================================ -->
+        <form method="post" id="frmSubmit">
+          <label>
+            <p class="label-txt">ENTER YOUR NAME</p>
+            <input type="text" class="input" name="name" required />
+            <div class="line-box">
+              <div class="line"></div>
+            </div>
+          </label> 
+          <label>
+            <p class="label-txt">ENTER YOUR EMAIL</p>
+            <input type="email" class="input" name="email" required />
+            <div class="line-box">
+              <div class="line"></div>
+            </div>
+          </label> 
+          <label>
+            <label>
+              <div class="">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="7"
+                  required
+                  placeholder="Write your message"
+                ></textarea>
+              </div>
+            </label>
+          </label>
+          <button type="submit" id="btnSubmit" class="button-form">Submit</button>
+          <div id="msg"></div>
+        </form>
+        <script>
+          jQuery("#frmSubmit").on("submit", function (e) {
+            e.preventDefault();
+            jQuery("#msg").html("Please wait...");
+            jQuery("#btnSubmit").attr("disabled", true);
+            jQuery.ajax({
+              url: "https://script.google.com/macros/s/AKfycbwb4oTfzL3kRpkhOCeGjFKh8LvnTUmIKiI-BLiisBKcBEW9iyc500kNDvp7sVvv9hkGBg/exec",
+              type: "post",
+              data: jQuery("#frmSubmit").serialize(),
+              success: function (result) {
+                jQuery("#frmSubmit")[0].reset();
+                jQuery("#msg").html(
+                  "Thank You For Your Response We Will Contact You Soon !"
+                );
+                jQuery("#btnSubmit").attr("disabled", false);
+                //window.location.href='';
+              },
+            });
+          });
+        </script>
+
+
+      </div>
+      <div class="col-lg-6">
+        <h3 style="font-size: 2.0rem;">Find Us Here!</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.435644645357!2d78.97638361493378!3d21.09519108596243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4952117eaac51%3A0x6d8277793eb63d6a!2sYeshwantrao%20Chavan%20College%20of%20Engineering%20(YCCE)%2C%20Nagpur!5e0!3m2!1sen!2sin!4v1667330266353!5m2!1sen!2sin" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <!-- <div class="social-media"> 
+    <a href="https://twitter.com/iru_official?t=8-8bSuf0Xa4r66UvaA6OeA&s=09"><i class="fab fa-twitter icon"></i></a>
+    <a href="https://www.linkedin.com/company/innovations-r-us/"><i class="fab fa-linkedin icon"></i></a>
+    <a href="https://www.instagram.com/innovationsrus/"><i class="fab fa-instagram icon"></i></a>
+      <i class="fas fa-envelope icon"></i>
+    </div> -->
+</div>
+   <p class="tnc-gd"><a href="tnc.html"><span style="text-decoration: none;">Terms & Conditions </span></a>|<a href="guidelines.html"> Common Guidelines </a>| <a href="privacy-policy.html">Privacy Policy</a> | <a href="information-policy.html">Information Policy</a> | <a href="No-refund-policy.html">No Refund Policy</a></p>
+
+
+    <p class="sub-content Copyright">© Copyright 2022 Innovations 'R' Us</p>
+    <p class="sub-content Copyright">Developed By:</p>
+    <a href="https://www.instagram.com/acm.ycce/"><img src="<?=base_url;?>public_html/images/acm.png" alt="" class="acm-logo"></a>
+  </footer>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+</body>
+</html>

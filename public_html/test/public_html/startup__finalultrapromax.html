@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin Sketch">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Sketch"> -->
+
+<style>
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;  
+	}
+   html{
+	font-family: "Montserrat";
+
+   }
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+
+	.topnav a.active {
+	  background-color: #04AA6D;
+	  color: white;
+	}
+
+	.topnav .icon {
+	  display: none;
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav a:not(:first-child) {display: none;}
+	  .topnav a.icon {
+		float: right;
+		display: block;
+	  }
+	}
+
+	@media screen and (max-width: 600px) {
+	  .topnav.responsive {position: relative;}
+	  .topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  .topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	  }
+	}
+	.lable{
+	 float: right;
+	}
+	.input{
+		height:30px;
+		width:100%;
+		background-color:#F0F0F0;
+		margin-top:10px;
+		border-color:#06283D;
+		border:2px solid #06283D;
+		border-radius:5px
+	}
+	.input1{
+		height:30px;
+		width:100%;
+		background-color:#F0F0F0;
+		margin-top:10px;
+		border-color:white;
+		border:2px solid #06283D	;
+		border-radius:5px
+	}
+	table, th, td {
+	  border:1px solid transparent;
+	  border-collapse: collapse;
+	}
+
+	.paddleft{
+		border:2px solid transparent;
+		width:10%;
+		height:50px;
+		float:left
+	}
+	.tab{
+		border:1px solid transparent;
+		float:left;
+		width:35%;
+		height:450px
+	}
+	.tab2{
+		border:1px solid transparent;
+		float:left;
+		width:45%;
+		height:350px
+	}
+
+	.shadow{
+		border:2px solid red;
+		float:left;
+		width:80%;
+		height:550px; 
+		border: 0px solid;
+		background-color:white;
+		padding: 10px;
+		box-shadow: 5px 10px 8px 10px #888888;
+	}
+	.div2{
+		width:120%;
+		text-align:right	
+	}
+	@media screen and (max-width: 1100px) {
+		.div2{
+			width:70%;
+			text-align:right	
+		}
+		.tab{
+			border:1px solid transparent;
+			float:left;
+			width:45%;
+			height:550px
+		}
+		.tab2{
+			border:1px solid transparent;
+			float:left;
+			width:45%;
+			height:550px
+		}
+		.paddleft{
+			border:1px solid transparent;
+			width:5%;
+			height:50px;
+			float:left
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		.table, th, td {
+			font-size:15px
+		}
+		.input1{
+			height:30px;
+			width:100%;
+			background-color:#F0F0F0;
+			margin-top:10px;
+			border-color:white;
+			border:2px solid grey;
+			border-radius:5px;
+			float:left
+		}
+		.tab{
+			border:1px solid transparent;
+			float:left;
+			width:90%;
+			height:550;
+		}
+		.tab2{
+			border:1px solid transparent;
+			float:left;
+			width:90%;
+			height:550;
+		}
+		.paddleft{
+			border:1px solid transparent;
+			width:5%;
+			height:800px;
+			float:left
+		}
+		.shadow{
+			border:2px solid red;
+			float:left;
+			width:80%;
+			height:1240px;
+			border: 0px solid;
+			background-color:white;
+			padding: 10px;
+			box-shadow: 5px 10px 8px 10px #888888;
+		}
+	}
+
+	@media screen and (max-width: 850px) {
+		.table, th, td {
+			font-size:12px;
+		}
+
+
+		td {
+		  text-align: right;
+		  padding:5px
+		}
+	}
+	#example2 {
+	  border: 1px solid;
+	  padding: 10px;
+	  box-shadow: 5px 10px #888888;
+	}
+	@media screen and (max-width: 600px) {
+		.input1{
+			height:30px;
+			width:90%;
+			background-color:#F0F0F0;
+			margin-top:10px;
+			border-color:white;
+			border:2px solid grey;
+			border-radius:5px;
+			float:left
+		}
+	}
+	@media screen and (max-width: 400px) {
+		.input1{
+		height:30px;
+		width:40%;
+		background-color:#F0F0F0;
+		margin-top:10px;
+		border-color:white;
+		border:2px solid grey;
+		border-radius:5px;float:left
+		}
+	}
+</style>
+</head>
+<body >
+
+
+
+	<div style="border:0px solid red;
+	width:100%;
+	height:50px;
+	text-align:center;
+	font-family:Londrina Sketch;  	
+	font-size:20px">
+		<h1 style="color:#06283D">Startup Form
+	</div>
+	<div class="paddleft"></div>
+	<div class="shadow" >
+	<div  class="tab" style="margin-top:40px" >
+
+		<table style="width:100%">
+
+			<form >
+				<tr>
+					<td><label class="lable">Team Name :<span style="color: red;">*</span> </label></td>
+					<td> <input type="text" id="startupname" name="startupname" placeholder="Team Name" class="input"  required></td>
+				</tr>
+				 <tr>
+					<td><label class="lable" >Choose Your Category:<span style="color: red;">*</span></label></td>
+					<td>	  
+					<select id="cars" name="cars" style="height:35px;width:100%;background-color:#F0F0F0;margin-top:10px;border-color:black;border:2px solid #06283D;border-radius:5px"  required>
+						
+						<option value="volvo">class 5-8</option>
+						<option value="saab">class 9-12</option>
+						<option value="fiat">undergratuate</option>
+						<option value="audi">any professionals</option>
+					</select>
+					</td>
+						
+				</tr>
+				<tr>
+					<td><label class="lable">Name of Startup :<span style="color: red;">*</span> </label></td>
+					<td> <input type="text" id="startupname" name="startupname" placeholder="Name of Startup" class="input"  required></td>
+				</tr>
+				<tr>
+				    <td><label class="lable">Name of Team Leader :<span style="color: red;">*</span></label></td>
+					<td> <input type="text" id="teamleadname" name="teamleadname" placeholder="Name of Team Leader :" class="input"  required></td>
+				</tr>
+				  
+				  
+				<tr>
+					<td><label class="lable">Contact No.(Team Leader)<span style="color: red;">*</span></label></td>
+					<td> <input type="text" id="conatct" name="conatct" placeholder="Contact No." class="input"  required></td>
+				</tr>
+				<tr>
+					<td><label class="lable">Alternate Contact No.  :<span style="color: red;">*</span></label></td>
+					<td> <input type="text" id="alternatecontact" name="alternatecontact" placeholder="Alternate Contact No." class="input"  required></td>
+	            </tr>      
+				<tr>
+					<td><label class="lable">Email Id (Team Leader) :<span style="color: red;">*</span> </label></td>
+					<td> <input type="email" id="email" name="eamil" placeholder="Email Id (Team Leader) :" class="input"  required></td>
+				</tr>    
+				 <tr>
+					<td><label class="lable">Name of Team Member - 1: </label></td>
+					<td> <input type="text" id="membername1" name="membername1" placeholder="Name of Team Member - 1: " class="input" > </td>
+				</tr>
+				<tr>
+					<td><label class="lable">Name of Team Member - 2:	 </label></td>
+				    <td> <input type="text" id="membername2" name="membername2" placeholder="Name of Team Member - 2: " class="input" ></td>
+				 </tr>
+				<tr>
+					<td><label class="lable">Name of Team Member - 3:	 </label></td>
+				    <td> <input type="text" id="membername3" name="membername3" placeholder="Name of Team Member - 3: " class="input"  ></td>
+				</tr>
+				  
+
+
+		</table>
+	</div>
+	<div class="tab2" style="margin-top:40px "  >
+
+		<table class="div2">
+		<form >
+				  
+			<tr>
+				<td><label class="lable">Have you incubated at any incubator?:<span style="color: red;">*</span></label></td>
+				<td style="float:left"> <input type="radio" id="yes" name="incubator" value="yes" required>
+				  <label for="yes">Yes</label>	
+				  <input type="radio" id="no" name="incubator" value="no">
+				  <label for="no">No	</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label class="lable">Have you received any funding from Government?:<span style="color: red;">*</span></label></td>
+			 	<td style="float:left"> <input type="radio" id="yes" name="govermentfunding" value="yes" required>
+				  <label for="yes">Yes</label>	
+				  <input type="radio" id="no" name="govermentfunding" value="no">
+				  <label for="no">No	</label>
+				</td>
+			</tr>	  
+							  
+
+			<tr>
+				<td><label class="lable">If yes, provide details about funding amount and funding agency:</label></td>
+				<td> <input type="text" id="fundinfamount" name="fundinfamount" placeholder="funding amount and funding agency" class="input1" ></td>
+			</tr>     
+			 <tr>
+				<td><label class="lable">Have you received any investment from angel investors?:<span style="color: red;">*</span> </label></td>
+				<td style="float:left"> <input type="radio" id="yes" name="investors" value="yes" required>
+				  <label for="yes">Yes</label>	
+				  <input type="radio" id="no" name="investors" value="no">
+				  <label for="no">No	</label>
+				</td>
+			 </tr>
+			 <tr>
+				<td><label class="lable">If yes, provide details about funding amount and name of angel investor</label></td>
+				<td> <input type="text" id="fundinfamount" name="fundinfamount" placeholder="funding amount and name of angel investor" class="input1" ></td>
+			</tr>  
+			 <tr>
+				<td><label class="lable">Describe your startup (Minimum 500 words):<span style="color: red;">*</span> </label></td>
+				<td>
+					 <!-- <input type="text" id="Describe" name="Describe" placeholder="Describe your startup" class="input1" required> -->
+					 <textarea
+					 minlength="1000"
+					 class="form-control"
+					 name="message"
+					 id="message"
+					 cols="30"
+					 rows="7"
+					 required
+					 placeholder="Describe here"
+					 required
+				   ></textarea>
+					</td>
+				
+			</tr>
+	  
+			<tr>
+				<td><label class="lable">Startup Incorporation Certificate:	<span style="color: red;">*</span>	 </label></td>
+				<td>   <input type="file" id="myFile" name="filename" required></td>
+			</tr>
+	  
+	  
+			<tr>
+				<td><label class="lable">Udyam Registration Certificate:</label></td>
+				<td>   <input type="file" id="Udyam" name="filename"></td>
+		    </tr>
+			<tr>
+					<td><label class="lable">If you have registered at DPIIT, then enter DPIIT Registration Number</label></td>
+					<td> <input type="text" id="DPIIT" name="DPIIT" placeholder="enter DPIIT Registration Number" class="input1"></td>
+	        </tr>
+			<tr>
+				<td><label class="lable">If you have registered at DPIIT, then upload DPIIT Certificate</label></td>
+				<td>   <input type="file" id="DPIITCertificate" name="DPIITCertificate"></td>
+			</tr>
+			<tr>
+				<td><label class="lable">Enter Revenue generated during last 3 year</label></td>
+				<td> <input type="text" id="Revenue" name="Revenue" placeholder="Enter Revenue generated(3yrs)" class="input1" ></td>
+			</tr>
+			<tr>
+				<td style="text-align:left;padding-top:30px">
+				<input type="submit"  style="float:right;height:40px;width:120px;background-color:#06283D;color:white;border-radius:5px">		
+				</td>
+			</tr>
+
+		</table>
+	</div>
+
+	</div>
+	</body>
+</html>

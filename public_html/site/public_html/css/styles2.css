@@ -1,0 +1,29 @@
+df-messenger {
+    --df-messenger-bot-message: #06283D;
+    --df-messenger-button-titlebar-color: #1c5d86;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #06283D;
+    --df-messenger-user-message: #479b3d;
+    width: 500px;
+    height: 500px;
+   }
+
+   .chat-wrapper[opened="true"] {
+
+    height:73%;
+ 
+   width: 35%;
+ 
+ }
+ body{
+   background-color: #06283D;
+ }
+h1{
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 4.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+  }

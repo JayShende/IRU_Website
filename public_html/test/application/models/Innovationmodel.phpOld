@@ -1,0 +1,40 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Innovationmodel extends CI_Model {
+	public function innovation($data){
+		$this->db->insert('innovation',$data);
+		$id = $this->db->insert_id();
+		$q = $this->db->get_where('innovation', array('inn_id' => $id));
+		return $q->row();
+	}
+	public function startup($data)
+    {
+		$this->db->insert('startupform',$data);
+		
+		$id = $this->db->insert_id();
+		$q = $this->db->get_where('startupform', array('Startup_id' => $id));
+		return $q->row();
+	}
+	
+	
+	public function getdetails(){
+	$this->db->SELECT('*');
+	$this->db->FROM('innovation');
+	$query = $this->db->get();	
+		$row = $query->result();
+        return $row;	
+	
+		
+	}
+	
+	
+	public function getdetailsbyid($a){
+$q = $this->db->get_where('startupform', array('Startup_id' => $a));
+		return $q->row();
+	}
+	
+	
+	
+	
+}
